@@ -4,13 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalize-->
+    <link rel="stylesheet" href="./styles/normalize.css">
     <!--Bootstrap css-->
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
-    <title>Practicando Bootstrap</title>
+    <!--Tipografia-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Campesinos Colombianos</title>
+    <style>
+        *{
+            font-family: 'Open Sans', sans-serif;
+        }
+        #fondo-patron {
+            background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%239C92AC' fill-opacity='0.26' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
 </head>
 <body>
-    <h1>Holaaaaa chavales</h1>
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="#">CAMPESINADO</a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+          </nav>
 
+
+          <div class="text-center container mt-5 ">
+                <div>
+                    <h1>Campesinos Productores De Colombia</h1>
+                    <p>-Los campesinos de Colombia son personas nobles, honrados y muy fuertes.-</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-7 text-center rounded" id="fondo-patron">
+                        <img src="./img/farmersColombia.png" alt="Campesinos" class="img-fluid rounded mt-3 ">
+                        <div class="row justify-content-center">
+                            <p class="bg-light col-11">-Le debemos un gran favor a todos los campesinos Colombianos, ellos son los verdaderos héroes.-</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+          <div class="text-center container mt-5 mb-5">
+              <div>
+                <h2>Maneras en las que los campesinos colombianos  <br>han ayudado a su país:</h2>
+                <img src="./img/cafe.png" alt="Cafe" class="img-fluid rounded-circle">
+              </div>
+            <div class="row justify-content-center mt-3 ">
+                <div class="col-8">
+                    <div class="row justify-content-center">
+                        <p class="col-sm-5 text-center">1. Producen los mejores productos</p>
+                        <p class="col-sm-5 text-center">2. Han ayudado a pagar la deuda externa</p>
+                        <p class="col-sm-5 text-center">3. Lucharon por la libertad y mejores formas de vida</p>
+                        <p class="col-sm-5 text-center">4. Son patrimonio historico de Colombia</p>
+                    </div>
+                    <p class="mt-4">Te recomiendo este artículo si deseas aprender más sobre los: <a href="https://comisiondelaverdad.co/actualidad/noticias/campesinos-damos-comer-colombia-pero-no-reconocen-la-precariedad-vida-campo" target="_blank">campesinos Colombianos en este 2021</a> </p>
+                </div>
+            </div>
+            
+      </div>
+
+
+          <footer class="text-center footer-style bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 footer-col">
+                        <h3>Motivación</h3>
+                        <p>Si puedes soñarlo, puedes hacerlo
+
+                            - Walt Disney.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
     <!--B Jquery-->
     <script src="./scripts/jquery-3.6.0.min.js"></script>
     <!--B popper-->
